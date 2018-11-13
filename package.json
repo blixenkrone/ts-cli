@@ -18,6 +18,11 @@
     "cli",
     "ts"
   ],
+  "files": [
+    "./dist/utils",
+    "./dist/**.*.ts",
+    "./dist/*.js"
+  ],
   "author": "Simon Blixenkrone",
   "license": "ISC",
   "bugs": {
