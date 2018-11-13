@@ -1,8 +1,9 @@
 {
     "defaultSeverity": "error",
     "extends": ["tslint:recommended"],
-    "rulesDirectory": ["node_modules/codelyzer"],
+    "rulesDirectory": [],
     "rules": {
+        "no-empty": false,
         "class-name": true,
         "comment-format": [
             true,
