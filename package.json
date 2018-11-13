@@ -4,6 +4,10 @@
   "description": "Typescript CLI",
   "main": "app.ts",
   "scripts": {
+    "build": "npm run build-ts && npm run tslint",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "build-ts": "tsc",
+    "serve": "nodemon ./dist/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +23,17 @@
   "bugs": {
     "url": "https://github.com/byblix/ts-cli/issues"
   },
-  "homepage": "https://github.com/byblix/ts-cli#readme"
+  "homepage": "https://github.com/byblix/ts-cli#readme",
+  "devDependencies": {
+    "@types/commander": "^2.12.2",
+    "@types/node": "^10.12.6",
+    "@types/shelljs": "^0.8.0",
+    "codelyzer": "^4.5.0",
+    "commander": "^2.19.0",
+    "shelljs": "^0.8.3",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
+  },
+  "dependencies": {}
 }
