@@ -5,7 +5,10 @@ export class CommanderClass {
     constructor() { }
 
     public initCmd = () => {
-        // commander.
+        // commander
+        //     .action((file) => {
+
+        //     })
     }
 
 }

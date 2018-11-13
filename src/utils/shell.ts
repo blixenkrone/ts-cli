@@ -5,6 +5,6 @@ export class ShellClass {
     constructor() { }
 
     public initShell = () => {
-        shell.echo('Hello world!')
+        shell.echo('Hello Pasha!')
     }
 }
