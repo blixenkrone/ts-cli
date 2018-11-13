@@ -1,8 +1,8 @@
 {
   "name": "@blix/ts-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Typescript CLI",
-  "main": "app.ts",
+  "main": "dist/cli.js",
   "scripts": {
     "build": "npm run build-ts && npm run tslint",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
@@ -19,9 +19,7 @@
     "ts"
   ],
   "files": [
-    "./dist/utils",
-    "./dist/**.*.ts",
-    "./dist/*.js"
+    "dist"
   ],
   "author": "Simon Blixenkrone",
   "license": "ISC",
