@@ -1,0 +1,23 @@
+{
+  "name": "ts-cli",
+  "version": "1.0.0",
+  "description": "Typescript CLI",
+  "main": "app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byblix/ts-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "ts"
+  ],
+  "author": "Simon Blixenkrone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/byblix/ts-cli/issues"
+  },
+  "homepage": "https://github.com/byblix/ts-cli#readme"
+}
