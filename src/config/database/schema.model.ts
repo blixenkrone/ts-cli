@@ -1,6 +1,6 @@
 import { Schema } from 'mongoose';
 
-export const TodoSchema = new Schema({
+export const todoSchema = new Schema({
     name: {
         type: String,
     },
