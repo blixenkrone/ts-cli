@@ -2,13 +2,14 @@
   "name": "@blix/ts-cli",
   "version": "1.0.1",
   "description": "Typescript CLI",
-  "main": "dist/cli.js",
+  "main": "dist/app.js",
   "scripts": {
     "build": "npm run build-ts && npm run tslint",
+    "prod": "npm run build && npm run start",
+    "serve": "nodemon ./dist/app.js",
+    "start": "ts-node ./src/app.ts",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
-    "build-ts": "tsc",
-    "serve": "nodemon ./dist/cli.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-ts": "tsc"
   },
   "repository": {
     "type": "git",
@@ -32,13 +33,19 @@
   "homepage": "https://github.com/byblix/ts-cli#readme",
   "devDependencies": {
     "@types/commander": "^2.12.2",
+    "@types/mongoose": "^5.3.1",
     "@types/node": "^10.12.6",
     "@types/shelljs": "^0.8.0",
+    "@types/winston": "^2.4.4",
     "commander": "^2.19.0",
+    "mongoose": "^5.3.12",
     "shelljs": "^0.8.3",
     "ts-node": "^7.0.1",
     "tslint": "^5.11.0",
-    "typescript": "^3.1.6"
+    "typescript": "^3.1.6",
+    "winston": "^3.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "mongodb": "^3.1.9"
+  }
 }

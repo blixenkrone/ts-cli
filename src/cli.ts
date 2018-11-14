@@ -1,10 +1,7 @@
 #!/usr/bin/env node
+import { CommanderClass, ShellClass, logger } from './utils';
 
-import { ShellClass } from './utils/shell';
-import { CommanderClass } from './utils/commander';
+class CLI {
 
-const shell = new ShellClass();
-const cmd = new CommanderClass();
-
-shell.initShell();
-cmd.initCmd();
+}
+export = new CLI();
