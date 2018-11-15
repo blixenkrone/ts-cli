@@ -1,14 +1,12 @@
-import commander from 'commander';
+import cmd from 'commander';
 
 export class CommanderClass {
-
     constructor() { }
 
     public initCmd = () => {
-        // commander
-        //     .action((file) => {
-
-        //     })
+        cmd
+            .option('-r, --run', 'Run program!')
+            .command('run', 'Run this cmd')
+            .parse(process.argv);
     }
-
 }

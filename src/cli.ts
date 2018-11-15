@@ -1,13 +1,20 @@
 #!/usr/bin/env node
 import { CommanderClass, ShellClass, logger } from './utils';
 
-class CLI {
+export class CLI {
 
     private shell = new ShellClass();
+    private cmd = new CommanderClass();
 
     constructor() {
-        this.shell.initShell();
+        // this.cmd.initCmd();
+        // this.shell.initShell();
     }
+
+    private addData = () => {
+
+    }
+
 }
 
-export = new CLI();
+// export = new CLI;
