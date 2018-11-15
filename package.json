@@ -6,8 +6,8 @@
   "scripts": {
     "build": "npm run build-ts && npm run tslint",
     "prod": "npm run build && npm run start",
-    "serve": "nodemon ./dist/app.js",
-    "start": "ts-node ./src/app.ts",
+    "serve": "nodemon src/app.ts",
+    "start": "nodemon dist/app.js",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
     "build-ts": "tsc"
   },
